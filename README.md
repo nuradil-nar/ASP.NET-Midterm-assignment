@@ -10,22 +10,22 @@ A distributed task management microservice built with **ASP.NET Core 8**, implem
 TaskTrackerAPI/
 ├── src/
 │   ├── Models/
-│   │   ├── BaseTask.cs          # Abstract base class + delegate/event
-│   │   ├── BugReportTask.cs     # Derived class with SeverityLevel
-│   │   ├── FeatureRequestTask.cs# Derived class with EstimatedHours
-│   │   └── DTOs.cs              # Request/Response records
+│   │   ├── BaseTask.cs               # Abstract base class + delegate/event
+│   │   ├── BugReportTask.cs          # Derived class with SeverityLevel
+│   │   ├── FeatureRequestTask.cs     # Derived class with EstimatedHours
+│   │   └── DTOs.cs                   # Request/Response records
 │   ├── Repositories/
-│   │   ├── ITaskRepository.cs   # Interface
+│   │   ├── ITaskRepository.cs        # Interface
 │   │   └── InMemoryTaskRepository.cs # In-memory implementation
 │   ├── Services/
-│   │   ├── TaskFilterService.cs # Static LINQ filter service (Block 1)
-│   │   └── TaskMapper.cs        # Domain → DTO mapper
+│   │   ├── TaskFilterService.cs      # Static LINQ filter service (Block 1)
+│   │   └── TaskMapper.cs             # Domain → DTO mapper
 │   ├── Controllers/
-│   │   └── TasksController.cs   # Web API controller (Block 2)
-│   └── Program.cs               # Entry point + DI setup
-├── Dockerfile                   # Multi-stage build
+│   │   └── TasksController.cs        # Web API controller (Block 2)
+│   └── Program.cs                    # Entry point + DI setup
+├── Dockerfile                        # Multi-stage build
 ├── docker-compose.yml
-├── ARCHITECTURE.md              # Block 3 – integration pattern analysis
+├── ARCHITECTURE.md                   # Block 3 – integration pattern analysis
 └── TaskTrackerAPI.csproj
 ```
 
