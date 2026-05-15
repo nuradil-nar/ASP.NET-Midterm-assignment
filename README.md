@@ -105,3 +105,4 @@ POST /api/tasks/feature
 ## Block 3 – Architecture
 
 See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the full analysis of why **RabbitMQ + MassTransit** (async) is preferred over synchronous HTTP/REST for the NotificationService integration.
+# ASP.NET-Midterm-assignment
